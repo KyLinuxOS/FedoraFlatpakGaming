@@ -22,15 +22,15 @@ dnf copr enable sentry/kernel-fsync
 #Mesa-aco
 dnf copr enable gloriouseggroll/mesa-aco 
 
-# Upgrade
-dnf -y --nogpgcheck --refresh upgrade
-
 # RPM Fusion
 dnf install --nogpgcheck -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 if [[ "$removepackagekit" -ne "1" ]]
 then
 	dnf install --nogpgcheck -y rpmfusion-free-appstream-data rpmfusion-nonfree-appstream-data
 fi
+
+# Upgrade
+dnf -y --nogpgcheck --refresh upgrade
 
 #Gaming-Flatpak
 git clone https://github.com/Chevek/Gaming-Flatpak.git
