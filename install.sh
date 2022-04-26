@@ -36,5 +36,8 @@ dnf -y --nogpgcheck --refresh upgrade
 git clone https://github.com/Chevek/Gaming-Flatpak.git
 cd Gaming-Flatpak/
 ./gaming-flatpak.sh
+cd ..
+cd ..
+rm FedoraFlatpakGaming-main
 
 echo "It is done, reboot please!"
