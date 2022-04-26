@@ -38,6 +38,6 @@ cd Gaming-Flatpak/
 ./gaming-flatpak.sh
 cd ..
 cd ..
-rm FedoraFlatpakGaming-main
+rm -r FedoraFlatpakGaming-main
 
 echo "It is done, reboot please!"
