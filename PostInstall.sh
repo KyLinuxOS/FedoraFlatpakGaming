@@ -8,9 +8,6 @@ then
 	exit;
 fi
 
-# Vérifs auto 
-isvbox=$(LANG=C hostnamectl | grep -i virtualization | grep -c oracle)
-
 ######## Script ################
 # Greeter and Faster DNF
 isfm=$(grep -c fastestmirror /etc/dnf/dnf.conf)
